@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Table</title>
+</head>
+<body>
+    <h1>Html Table</h1>
+    <!-- The <table> tag defines an HTML table.
+    An HTML table consists of one or more table rows (tr elements) which are used to group one or more table data (td elements).
+    The <tr> element defines a table row.
+    The <td> element defines a table data.
+    The <th> element defines a table header.
+    The table below has three columns and two rows. 
+    -->
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>42</td>
+        </tr>
+    </table>
+
+    <!-- The colspan attribute specifies the number of columns a table cell should span.
+    The rowspan attribute specifies the number of rows a table cell should span.
+    -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+            <td>John Smith</td>
+            <td>1234567890</td>
+            <td>0987654321</td>
+        </tr>
+    </table>
+
+    <!-- The table below has a caption -->
+    <table>
+        <caption>Table with a caption</caption>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>42</td>
+        </tr>
+    </table>
+
+    <!-- The table below has a header, footer, and body -->
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>&nbsp;</td>
+                <td>100</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>42</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- The table below has a border -->
+    <table style="border: 1px solid black;">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>42</td>
+        </tr>
+    </table>
+
+</body>
+</html>
