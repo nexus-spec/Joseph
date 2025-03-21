@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML JavaScript Introduction</title>
+</head>
+<body>
+    <h1>Introduction to JavaScript</h1>
+    <p>JavaScript is a programming language that allows you to implement complex features on web pages.</p>
+    
+    <!-- JavaScript can be inserted in HTML using the <script> tag -->
+    <script>
+        // This is a single-line comment in JavaScript
+
+        /* 
+           This is a multi-line comment in JavaScript.
+           You can use it to describe more complex logic.
+        */
+
+        // Example 1: Display an alert box
+        alert('Hello, this is an alert box!');
+
+        // Example 2: Writing to the console
+        console.log('This message is logged to the console.');
+
+        // Example 3: Changing the content of an HTML element
+        function changeContent() {
+            document.getElementById('demo').innerHTML = 'Content changed by JavaScript!';
+        }
+    </script>
+
+    <p id="demo">This content will change when the button is clicked.</p>
+    <!-- Button to trigger the JavaScript function -->
+    <button onclick="changeContent()">Click me to change content</button>
+</body>
+</html>
+
