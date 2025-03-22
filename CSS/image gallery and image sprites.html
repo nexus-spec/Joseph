@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Image Gallery and Image Sprite</title>
+    <style>
+        /* style for the image gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* style for the image sprite */
+        .sprite {
+            height: 200px;
+            width: 200px;
+            background-image: url('sprite.png');
+            background-repeat: no-repeat;
+        }
+
+        .sprite:hover {
+            background-position: -200px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Image Gallery</h1>
+    <div class="gallery">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <img src="image4.jpg" alt="Image 4">
+        <img src="image5.jpg" alt="Image 5">
+    </div>
+
+    <h1>CSS Image Sprite</h1>
+    <div class="sprite"></div>
+</body>
+</html>
+
+<!--
+    This page is a CSS image gallery and image sprite. 
+    The image gallery is a flexbox container that contains 5 images. 
+    The images are given a width and height of 300px and 200px respectively. 
+    They are also given a margin of 10px and a border-radius of 10px 
+    and a box-shadow to give them a little bit of depth. 
+    The justify-content property is set to center to center the images horizontally. 
+    The flex-wrap property is set to wrap to wrap the images to the next line when the screen gets too small. 
+
+    The image sprite is a div that is given a height and width of 200px. 
+    The background-image property is set to the sprite.png image. 
+    The background-repeat property is set to no-repeat to make sure the image is not repeated. 
+    The :hover pseudo-class is used to change the background-position property to -200px 0 when the user hovers over the div. 
+    This will make the second image in the sprite appear. 
+    The sprite.png image is a single image that contains all the images in the gallery. 
+    Each image is the same size as the div. 
+    The images are arranged horizontally in the sprite. 
+    The background-position property is used to display the correct image in the sprite. 
+    When the user hovers over the div, the background-position property is changed to -200px 0, 
+    which will display the second image in the sprite. 
+-->

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attributes Selectors</title>
+    <style>
+        /* CSS Attributes Selectors */
+        /* The [attribute] selector is used to select elements with a specified attribute */
+        [href] {
+            color: blue;
+        }
+
+        /* The [attribute="value"] selector is used to select elements with a specified attribute and value */
+        [href="https://www.projects.ceresense.com.ng/Joseph"] {
+            color: green;
+        }
+
+        /* The [attribute~="value"] selector is used to select elements with a specified attribute and value that contains a space-separated list of words */
+        [class~="red"] {
+            color: red;
+        }
+
+        /* The [attribute|="value"] selector is used to select elements with a specified attribute and value that is a hyphen-separated list of words */
+        [class|="red"] {
+            color: red;
+        }
+
+        /* The [attribute^="value"] selector is used to select elements with a specified attribute and value that starts with the specified value */
+        [class^="red"] {
+            color: red;
+        }
+
+        /* The [attribute$="value"] selector is used to select elements with a specified attribute and value that ends with the specified value */
+        [class$="red"] {
+            color: red;
+        }
+
+        /* The [attribute*="value"] selector is used to select elements with a specified attribute and value that contains the specified value */
+        [class*="red"] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Attributes Selectors</h1>
+    <p>This page is just about CSS attributes selectors, explained simply.</p>
+    <p><a href="https://www.projects.ceresense.com.ng/Joseph">Visit My Portfolio Website</a></p>
+    <p class="red">This text is red.</p>
+    <p class="red blue">This text is red and blue.</p>
+    <p class="red-blue">This text is red and blue.</p>
+    <p class="redBlue">This text is red and blue.</p>
+    <p class="red blue-green">This text is red and blue-green.</p>

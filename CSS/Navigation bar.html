@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Navigation Bar</title>
+    <style>
+        /* CSS Navigation Bar */
+        /* A navigation bar is a horizontal or vertical bar containing links or other elements.
+        It is typically used to provide quick access to important links on a website. */
+
+        /* Horizontal Navigation Bar */
+        .horizontal {
+            /* The display property is used to set the display type of an element. */
+            display: flex;
+            /* The flex-direction property is used to set the direction of the flex items. */
+            flex-direction: row;
+            /* The justify-content property is used to set the alignment of the flex items.
+            It is used to distribute the elements horizontally. */
+            justify-content: space-between;
+            /* The list-style property is used to remove the bullets from the list items. */
+            list-style: none;
+            /* The padding property is used to set the padding of an element.
+            It is used to add space between the elements. */
+            padding: 0;
+            /* The margin property is used to set the margin of an element.
+            It is used to add space between the elements. */
+            margin: 0;
+        }
+
+        /* Vertical Navigation Bar */
+        .vertical {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* The a element is used to create a hyperlink to another webpage or to a section within a webpage. */
+        a {
+            /* The text-decoration property is used to set the decoration of the text.
+            It is used to remove the underline from the link. */
+            text-decoration: none;
+            /* The color property is used to set the color of the text.
+            It is used to change the color of the link. */
+            color: black;
+        }
+
+        /* The :hover pseudo-class is used to set the style of an element when it is hovered over by the mouse. */
+        a:hover {
+            /* The background-color property is used to set the background color of an element.
+            It is used to change the background color of the link when it is hovered over. */
+            background-color: #f1f1f1;
+        }
+
+        /* The :active pseudo-class is used to set the style of an element when it is clicked. */
+        a:active {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Navigation Bar</h1>
+    <p>This page is just about CSS navigation bar, explained simply.</p>
+
+    <!-- Horizontal Navigation Bar -->
+    <nav class="horizontal">
+        <a href="https://www.w3schools.com">Home</a>
+        <a href="https://www.w3schools.com/html">HTML</a>
+        <a href="https://www.w3schools.com/css">CSS</a>
+        <a href="https://www.w3schools.com/php">PHP</a>
+    </nav>
+
+    <!-- Vertical Navigation Bar -->
+    <nav class="vertical">
+        <a href="https://www.w3schools.com">Home</a>
+        <a href="https://www.w3schools.com/html">HTML</a>
+        <a href="https://www.w3schools.com/css">CSS</a>
+        <a href="https://www.w3schools.com/php">PHP</a>
+    </nav>
+
+    <!-- This is the target section for the internal link -->
+    <h2 id="section2">Section 2</h2>
+    <p>This is Section 2 of the page.</p>
+</body>
+</html>

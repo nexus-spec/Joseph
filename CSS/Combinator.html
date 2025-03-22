@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <style>
+        /* CSS Combinators */
+        
+        /* The descendant combinator (space) selects all elements that are descendants of a specified element */
+        .descendant p {
+            color: blue; /* Selects all <p> elements inside elements with class 'descendant' */
+        }
+
+        /* The child combinator (>) selects all elements that are direct children of a specified element */
+        .child > p {
+            color: green; /* Selects all <p> elements that are direct children of elements with class 'child' */
+        }
+
+        /* The adjacent sibling combinator (+) selects the element that is an immediate sibling of a specified element */
+        .sibling + p {
+            color: red; /* Selects the first <p> element that is immediately preceded by an element with class 'sibling' */
+        }
+
+        /* The general sibling combinator (~) selects all elements that are siblings of a specified element */
+        .general ~ p {
+            color: orange; /* Selects all <p> elements that are siblings of an element with class 'general' */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Combinators</h1>
+    <div class="descendant">
+        <p>This paragraph is a descendant.</p>
+    </div>
+    <div class="child">
+        <p>This paragraph is a direct child.</p>
+    </div>
+    <div class="sibling"></div>
+    <p>This paragraph is an adjacent sibling.</p>
+    <div class="general"></div>
+    <p>This paragraph is a general sibling.</p>
+</body>
+</html>
+

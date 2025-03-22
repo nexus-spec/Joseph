@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-Classes and Pseudo-Elements</title>
+    <style>
+        /* CSS Pseudo-Classes */
+        /* The :hover pseudo-class is used to style an element when the mouse is over it */
+        a:hover {
+            color: red; /* Changes the link color to red on hover */
+        }
+
+        /* The :nth-child(n) pseudo-class is used to style the nth child of a parent element */
+        li:nth-child(odd) {
+            background-color: lightgray; /* Applies a light gray background to odd list items */
+        }
+
+        /* CSS Pseudo-Elements */
+        /* The ::before pseudo-element is used to insert content before an element */
+        p::before {
+            content: "Note: "; /* Inserts "Note: " before every paragraph */
+            font-weight: bold; /* Makes the inserted content bold */
+        }
+
+        /* The ::after pseudo-element is used to insert content after an element */
+        p::after {
+            content: " [End of paragraph]"; /* Inserts text after every paragraph */
+            font-style: italic; /* Makes the inserted content italic */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Pseudo-Classes and Pseudo-Elements</h1>
+    <p>This page explains CSS pseudo-classes and pseudo-elements.</p>
+
+    <!-- Example of a link that changes color when hovered -->
+    <a href="#">Hover over this link</a>
+
+    <!-- Example of a list with nth-child styling -->
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ul>
+
+    <!-- Example paragraphs with ::before and ::after pseudo-elements -->
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+</body>
+</html>
+
