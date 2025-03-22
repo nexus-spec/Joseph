@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Rounded Corners</title>
+    <style>
+        /* CSS Rounded Corners */
+        /* The border-radius property is used to give an element rounded corners.
+        /* The value of the border-radius property can be specified in one of two ways:
+        /* 1. By using a single value, which will be applied to all four corners of the element.
+        /* 2. By using four values, which will be applied to the top-left, top-right, bottom-right, and bottom-left corners of the element, in that order. */
+        .rounded-corners {
+            border-radius: 10px; /* This will give the element rounded corners with a radius of 10px */
+            /* border-radius: 10px 20px 30px 40px; This will give the element rounded corners with a radius of 10px on the top-left, 20px on the top-right, 30px on the bottom-right, and 40px on the bottom-left. */
+        }
+
+        /* The -webkit-border-radius property is used to give an element rounded corners in Safari and Chrome.
+        /* The -moz-border-radius property is used to give an element rounded corners in Firefox.
+        /* The -o-border-radius property is used to give an element rounded corners in Opera. */
+        .rounded-corners {
+            -webkit-border-radius: 10px; /* This will give the element rounded corners with a radius of 10px in Safari and Chrome */
+            -moz-border-radius: 10px; /* This will give the element rounded corners with a radius of 10px in Firefox */
+            -o-border-radius: 10px; /* This will give the element rounded corners with a radius of 10px in Opera */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Rounded Corners</h1>
+    <p>This page is just about CSS rounded corners, explained simply.</p>
+    <div class="rounded-corners">This div has rounded corners.</div>
+</body>
+</html>
