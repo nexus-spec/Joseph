@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Introduction, Syntax, and Selectors</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        h1 {
+            color: red;
+        }
+        p {
+            font-size: 20px;
+        }
+        /* this is a css comment */
+        /* css selectors are used to select the element(s) you want to style */
+        /* the universal selector is * which selects all elements */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* the type selector selects an element based on its type */
+        h2 {
+            color: green;
+        }
+        /* the class selector selects an element based on its class name */
+        .red {
+            color: red;
+        }
+        /* the id selector selects an element based on its id */
+        #blue {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Introduction</h1>
+    <p>CSS stands for Cascading Style Sheets. It is a style sheet language used for describing the presentation of a webpage written in HTML or XML. CSS is used for describing the look and formatting of a webpage, including the layout, colors, and fonts.</p>
+    <h2>CSS Syntax</h2>
+    <p>The syntax of CSS is made up of selectors, properties, and values. Selectors are used to select the element(s) you want to style, properties are the attributes of the element(s) you want to style, and values are the values you want to assign to the properties.</p>
+    <p>For example, the following CSS code selects all the h1 elements on a webpage and assigns them the color red:</p>
+    <code>
+        h1 {
+            color: red;
+        }
+    </code>
+    <h2>CSS Selectors</h2>
+    <p>CSS selectors are used to select the element(s) you want to style. There are many different types of selectors, including:</p>
+    <ul>
+        <li>The universal selector (*) which selects all elements</li>
+        <li>The type selector which selects an element based on its type</li>
+        <li>The class selector which selects an element based on its class name</li>
+        <li>The id selector which selects an element based on its id</li>
+    </ul>
+    <p>For example, the following CSS code selects all the elements with the class name "red" and assigns them the color red:</p>
+    <code>
+        .red {
+            color: red;
+        }
+    </code>
+    <p>For example, the following CSS code selects the element with the id "blue" and assigns it the color blue:</p>
+    <code>
+        #blue {
+            color: blue;
+        }
+    </code>
+    <h1 class="red">This is a red headline</h1>
+    <h2 id="blue">This is a blue headline</h2>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tables</title>
+    <style>
+        table {
+            /* The display property is used to define the display type of an element. */
+            /* Here, it is used to make the table display as a block element. */
+            display: block;
+        }
+
+        th, td {
+            /* The padding property is used to add space between the content of an element and its border. */
+            /* Here, it is used to add space between the content of the table cells and their borders. */
+            padding: 10px;
+        }
+
+        th {
+            /* The background-color property is used to set the background color of an element. */
+            /* Here, it is used to set the background color of the table headers. */
+            background-color: #4CAF50;
+        }
+
+        tr:nth-child(even) {
+            /* The nth-child() selector is used to select the nth child element of a parent element. */
+            /* Here, it is used to select every even table row. */
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Tables</h1>
+    <p>This page is just about CSS tables, explained simply.</p>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>Doe</td>
+            <td>42</td>
+        </tr>
+    </table>
+</body>
+</html>

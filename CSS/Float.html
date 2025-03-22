@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float</title>
+    <style>
+        /* The float property is used for positioning and a layout technique.
+        /* The float property allows an element to be placed along the left or right side of its parent element.
+        /* The float property can have one of the following values:
+        /*  - left: The element floats to the left of its parent.
+        /*  - right: The element floats to the right of its parent.
+        /*  - none: The element does not float at all (default).
+        /*  - inherit: The element inherits the float value of its parent.
+
+        /* Example 1: Float left */
+        .float-left {
+            float: left;
+        }
+
+        /* Example 2: Float right */
+        .float-right {
+            float: right;
+        }
+
+        /* Example 3: Clear float */
+        .clear-float {
+            clear: both;
+        }
+
+        /* Example 4: Use float for a layout */
+        .container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .container div {
+            width: 50%;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Float</h1>
+    <p>This page is just about CSS float, explained simply.</p>
+    <div class="float-left">This is a div that floats to the left.</div>
+    <div class="float-right">This is a div that floats to the right.</div>
+    <div class="clear-float">This is a div that clears the float.</div>
+    <div class="container">
+        <div>This is a div that floats to the left.</div>
+        <div>This is a div that floats to the right.</div>
+    </div>
+</body>
+</html>

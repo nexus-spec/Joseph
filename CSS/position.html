@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        /* The position property specifies the type of positioning method used for an element */
+        .relative {
+            position: relative;
+            /* The relative position is relative to its normal position */
+            left: 30px;
+            top: 30px;
+        }
+
+        .absolute {
+            position: absolute;
+            /* The absolute position is relative to its nearest positioned ancestor */
+            left: 30px;
+            top: 30px;
+        }
+
+        .fixed {
+            position: fixed;
+            /* The fixed position is relative to the viewport */
+            left: 30px;
+            top: 30px;
+        }
+
+        .sticky {
+            position: sticky;
+            /* The sticky position is relative to its nearest positioned ancestor and "sticks" to it, but is also relative to the viewport */
+            left: 30px;
+            top: 30px;
+        }
+
+        .static {
+            position: static;
+            /* The static position is the default position, which is not positioned */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Position</h1>
+    <p>This page is just about CSS position, explained simply.</p>
+    <p class="relative">This is relative.</p>
+    <p class="absolute">This is absolute.</p>
+    <p class="fixed">This is fixed.</p>
+    <p class="sticky">This is sticky.</p>
+    <p class="static">This is static.</p>
+</body>
+</html>

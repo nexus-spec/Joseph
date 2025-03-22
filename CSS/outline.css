@@ -1,0 +1,27 @@
+.outline-none {
+    outline: none;
+}
+.outline-dotted {
+    outline: dotted;
+}
+.outline-dashed {
+    outline: dashed;
+}
+.outline-solid {
+    outline: solid;
+}
+.outline-double {
+    outline: double;
+}
+.outline-groove {
+    outline: groove;
+}
+.outline-ridge {
+    outline: ridge;
+}
+.outline-inset {
+    outline: inset;
+}
+.outline-outset {
+    outline: outset;
+}

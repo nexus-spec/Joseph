@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Height and Width</title>
+    <style>
+        .box {
+            background-color: lightgray;
+            width: 200px; /* width of the box */
+            height: 100px; /* height of the box */
+            border: 1px solid black;
+            margin: 20px;
+        }
+
+        .responsive-box {
+            background-color: lightblue;
+            width: 50%; /* responsive width, 50% of the parent element */
+            height: 150px; /* fixed height */
+            border: 1px solid black;
+            margin: 20px;
+        }
+
+        .full-height {
+            background-color: lightgreen;
+            width: 100%; /* full width of the parent element */
+            height: 100vh; /* full viewport height */
+            border: 1px solid black;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Height and Width Examples</h1>
+    <p>This page demonstrates different ways to set height and width using CSS.</p>
+    
+    <div class="box">Fixed width and height box.</div>
+    <div class="responsive-box">Responsive width, fixed height box.</div>
+    <div class="full-height">Full viewport height, full width box.</div>
+</body>
+</html>
+

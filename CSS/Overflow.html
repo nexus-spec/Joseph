@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: auto; /* This property controls what happens when content is too large for the container */
+        }
+
+        .overflow-hidden {
+            overflow: hidden; /* Content will be clipped and not visible */
+        }
+
+        .overflow-scroll {
+            overflow: scroll; /* Scrollbars will be added, allowing the user to scroll to see the content */
+        }
+
+        .overflow-visible {
+            overflow: visible; /* Default value, content will overflow the container boundary */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Overflow Examples</h1>
+    <p>This page demonstrates different overflow behaviors in CSS, explained simply.</p>
+    
+    <!-- Container with overflow: auto -->
+    <div class="container">
+        <p>This container has overflow set to auto. If the content overflows, scrollbars will appear only when necessary.</p>
+    </div>
+
+    <!-- Container with overflow: hidden -->
+    <div class="container overflow-hidden">
+        <p>This container has overflow set to hidden. The overflowing content will be clipped and not visible here.</p>
+    </div>
+
+    <!-- Container with overflow: scroll -->
+    <div class="container overflow-scroll">
+        <p>This container has overflow set to scroll. Scrollbars will always appear regardless of whether the content overflows.</p>
+    </div>
+
+    <!-- Container with overflow: visible -->
+    <div class="container overflow-visible" style="height: 50px;">
+        <p>This container has overflow set to visible. The content will overflow beyond the container's boundary.</p>
+    </div>
+</body>
+</html>
+
